@@ -4,5 +4,8 @@ NOTE: Edit this sheet with your name and the time before you check out a piece o
 
 Name  | Start Time | End time
 ------------------------------
+Mark  |    15:00   |   18:00
+Jared |            |
+------------------------------
 Jared |    18:00   |
 ------------------------------
