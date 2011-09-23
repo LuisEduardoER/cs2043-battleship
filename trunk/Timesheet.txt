@@ -1,0 +1,8 @@
+NOTE: Edit this sheet with your name and the time before you check out a piece of code,
+      and add the end time when you're finished.
+
+
+Name  | Start Time | End time
+------------------------------
+Jared |    18:00   |
+------------------------------
