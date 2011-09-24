@@ -1,11 +1,13 @@
-NOTE: Edit this sheet with your name and the time before you check out a piece of code,
-      and add the end time when you're finished.
+NOTE: Edit this sheet with the date, your name, the time, and what you are working
+      on before you check out a piece of code, and add the end time when you're finished.
 
 
-Name  | Start Time | End time
-------------------------------
-Mark  |    15:00   |   18:00
-Jared |            |
-------------------------------
-Jared |    18:00   |   21:15
-------------------------------
+Name  |    Date     | Start Time | End time | Task
+---------------------------------------------------------------------------
+Mark  |  9/23/2011  |    15:00   |   18:00  | Deliverable 1 Work Breakdown and task list
+Jared |             |            |          |
+---------------------------------------------------------------------------
+Jared |  9/23/2011  |    18:00   |   21:15  | Deliverable 1 Work Breakdown 
+---------------------------------------------------------------------------
+Jared |  9/24/2011  |    12:27   |          | Deliverable 1 Gantt chart and PERT chart
+---------------------------------------------------------------------------
