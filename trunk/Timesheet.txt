@@ -13,7 +13,7 @@ Marc  |  9/24/2011  |    14:00   |   18:00  | Deliverable 1 Risk analysis
 ---------------------------------------------------------------------------
 Jared |  9/25/2011  |    12:27   |   13:30  | Deliverable 1 Gantt chart and PERT chart
 ---------------------------------------------------------------------------
-Jared |  9/26/2011  |    22:00   |          | Finished Deliverable 1 PERT chart, schedule, 
+Jared |  9/26/2011  |    22:00   |    2:06  | Finished Deliverable 1 PERT chart, schedule, 
       |             |            |          | fixed up formatting, consolidated work
       |             |            |          | breakdown smaller sub headings
 ---------------------------------------------------------------------------
