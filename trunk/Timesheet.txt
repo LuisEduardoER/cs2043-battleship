@@ -21,6 +21,6 @@ Marc  |  9/26/2011  |    23:00   |   00:54  | Deliverable 1 Gantt chart,
       |             |            |          | Merged 'Create Client Game Server'
       |             |            |          | and 'Create GUI', misc. editing
 ---------------------------------------------------------------------------------------------
-Marc  |  10/4/2011  |    14:47   |          | Deliverable 2 simple class diagram, program
+Marc  |  10/4/2011  |    14:47   |   15:30  | Deliverable 2 simple class diagram, program
 Jared |             |            |          | design
 ---------------------------------------------------------------------------------------------
