@@ -1,0 +1,8 @@
+class Player
+{
+    Ship[] shipArr;
+    
+    String query (String data);
+    
+    
+}
