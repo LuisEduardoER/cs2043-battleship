@@ -3,7 +3,7 @@
 @date October 8, 2011
 */
 
-public class Ship{
+public abstract class Ship{
 
 	protected String name;
 	protected int numNodes;
