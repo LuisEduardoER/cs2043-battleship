@@ -1,5 +1,4 @@
-
-public class Test {
+public class UnitTests {
 
 	/**
 	 * @param args
