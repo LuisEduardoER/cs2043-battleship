@@ -32,5 +32,7 @@ Marc  |  10/8/2011  |    14:00   |   16:00  | Worked on writing class descriptio
 Jared |  10/9/2011  |    09:30   |   12:00  | Deliverable 2 updated UML diagram, wrote some
       |             |            |          | test implementation for Ship and subclasses
 ---------------------------------------------------------------------------------------------
-Marc  |  10/10/2011  |    16:00  |   17:30  | General clean-up of class description
+Marc  |  10/10/2011 |    16:00   |   17:30  | General clean-up of class description
+---------------------------------------------------------------------------------------------
+Jared |  10/18/2011 |    17:10   |   18:30  | Deliverable 3 test cases
 ---------------------------------------------------------------------------------------------
