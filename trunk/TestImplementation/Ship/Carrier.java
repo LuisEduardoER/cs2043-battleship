@@ -8,7 +8,7 @@ public class Carrier extends Ship {
 
 
 
-	public Carrier(int xStart, int xEnd, char yStart, char yEnd) {
+	public Carrier(int xStart, int xEnd, int yStart, int yEnd) {
 
 		
 
