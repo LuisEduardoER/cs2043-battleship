@@ -1,42 +1,56 @@
 /**
+
 @author Marc Antoine Gosselin-Lavigne
+@author Jared Hanson
+
 @date October 8, 2011
+
 */
 
-public abstract class Ship{
+
+
+public class Ship{
 
 	protected String name;
 	protected int numNodes;
-	protected Node[] shipNodes;
-	
-	public Ship(int xStart, int xEnd, char yStart, char yEnd)
+	protected ShipNode[] shipNodes;
+
+
+	public Ship(int xStart, int xEnd, int yStart, int yEnd)
 	{
 		if(xStart == xEnd){
 			numNodes = yEnd - yStart;
 			shipNodes = new Node[numNodes];
+
 			for(int i = 0; i < numNodes; i++){
 				shipNodes[i] = new Node(xStart, yStart);
 				yStart++;
 			}
 		}
+
 		else if(yStart == yEnd){
 			numNodes = xEnd - xStart;
 			shipNodes = new Node[numNodes];
+
 			for(int i = 0; i < numNodes; i++) shipNodes[i] = new Node(xStart + i, yStart);
 		}
-	}
-		
+	} 	
+
 	/**@return returns true if every node on the ship has been hit, false otherwise*/
+
 	public boolean isSunk()
 	{
 		int i = 0;
+      
 		for(int j = 0; j < numNodes; j++){
 			if(shipNodes[i].hasBeenHit()) i++;
 		}
+
 		if (i >= numNodes)
 		{
 			return true;
 		}
+
 		else
 		{
 			return false;
@@ -48,6 +62,7 @@ public abstract class Ship{
 	@return Two battleship protocol Strings, the first meant for the client of the
 	* player calling this method, the second meant for the other client. The String
 	* tells the client if the coordinates passed in where a hit or not*/
+
 	public String[] isHit(int xIn, char yIn)
 	{
 		String allyStr = new String();
@@ -65,19 +80,23 @@ public abstract class Ship{
 				allyStr = allyStr + "sunk " + this.toString();
 				enemyStr = enemyStr + "sunk " + this.toString();
 			}
+
 			else{
 				allyStr = allyStr + "hit";
 				enemyStr = enemyStr + "hit";
 			}
 		}
+
 		else{
 			allyStr = allyStr + "miss";
 			enemyStr = enemyStr + "miss";
 		}
+
 		String[] strArr = new String[2];
 		strArr[0] = allyStr;
 		strArr[1] = enemyStr;
 		return strArr;
+
 	}
 
 	/**@return the kind of ship, as a two letter String*/
