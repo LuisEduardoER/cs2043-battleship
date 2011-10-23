@@ -6,7 +6,7 @@
 
 public class Cruiser extends Ship {
 
-	public Cruiser(int xStart, int xEnd, char yStart, char yEnd) {
+	public Cruiser(int xStart, int xEnd, int yStart, int yEnd) {
 		
 		super(xStart, xEnd, yStart, yEnd);
 		name = "CR";
