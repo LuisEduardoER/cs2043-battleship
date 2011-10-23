@@ -1,3 +1,8 @@
+/**
+@author Marc Antoine Gosselin-Lavigne
+@author Jared Hanson
+@date October 8, 2011
+*/
 
 public class Cruiser extends Ship {
 
