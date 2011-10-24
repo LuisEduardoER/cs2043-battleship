@@ -1,0 +1,93 @@
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
+
+public class Player 
+{
+	public  final int numberOfShips = 5;
+	private ServerSocket serverSocket = null;
+	private Socket socket  = null;
+	private Scanner reader = null;
+	private PrintWriter writer = null;
+	private Ship[] shipArray = null;
+	int playerNumber = 0;
+	
+	public Player(int playerNumberIn)
+	{
+		playerNumber = playerNumberIn;
+	}
+	
+	public int initialize()
+	{
+		int port = 23; //Listen on port 23 by default
+		try
+		{
+			//Create a ServerSocket on port "port"
+			serverSocket = new ServerSocket(port);
+		}
+		catch (IOException io)
+		{
+			 throw new IOException("Could not listen on port " + port);
+		}
+		
+		try
+		{
+			socket = serverSocket.accept();
+		}
+		catch (IOException io)
+		{
+			throw new IOException("Could not accept connection on port " + port);
+		}
+		
+		try
+		{
+			reader = new Scanner(socket.getInputStream());
+			writer = new PrintWriter(socket.getOutputStream());
+		}
+		catch (NullPointerException np)
+		{
+			throw new IOException("Could not read or write from client");
+		}
+		catch (IOException io)
+		{
+			throw new IOException("Could not read or write from client");
+		}	
+	}
+	
+	public String getInput()
+	{
+		int  row = -1;
+		char col = 0;
+		boolean done = false;
+		String  result = "err";
+		
+		while (!done)
+		{
+			if (reader.hasNextInt())
+			{
+				row = reader.nextInt();
+			}
+	
+			if (reader.hasNext())
+			{
+				String temp = reader.next();
+				
+				if (temp.length() == 1)
+				{
+					col = temp.charAt(0);
+				}
+			}
+			
+			if ((row >= 0) && (row <= 10))
+			{
+				if ((col >= 'A') && (col <= 'J'))
+				{
+					result = "Something"; //Not sure what should be returned
+				}
+			}
+		}
+		
+		//Sent the result to the client
+		writer.println(result);
+	}
+}
