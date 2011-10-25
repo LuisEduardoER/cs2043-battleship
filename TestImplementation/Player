@@ -4,90 +4,99 @@ import java.util.Scanner;
 
 public class Player 
 {
-	public  final int numberOfShips = 5;
+	public final int numberOfShips = 5;
 	private ServerSocket serverSocket = null;
-	private Socket socket  = null;
+	private Socket socket = null;
 	private Scanner reader = null;
 	private PrintWriter writer = null;
 	private Ship[] shipArray = null;
 	int playerNumber = 0;
-	
-	public Player(int playerNumberIn)
+
+	public Player(int playerNumberIn) 
 	{
 		playerNumber = playerNumberIn;
 	}
-	
-	public int initialize()
+
+	public int initialize() throws IOException 
 	{
-		int port = 23; //Listen on port 23 by default
-		try
+		int result = -1;
+		int port = 23; // Listen on port 23 by default
+
+		// Create a ServerSocket on port "port"
+		serverSocket = new ServerSocket(port);
+		socket = serverSocket.accept();
+		reader = new Scanner(socket.getInputStream());
+		writer = new PrintWriter(socket.getOutputStream(), true);
+
+		if ((serverSocket != null) 
+			&& 
+			(socket != null) 
+			&& 
+			(reader != null)
+			&& 
+			(writer != null)) 
 		{
-			//Create a ServerSocket on port "port"
-			serverSocket = new ServerSocket(port);
-		}
-		catch (IOException io)
-		{
-			 throw new IOException("Could not listen on port " + port);
+			result = 0;
 		}
 		
-		try
-		{
-			socket = serverSocket.accept();
-		}
-		catch (IOException io)
-		{
-			throw new IOException("Could not accept connection on port " + port);
-		}
-		
-		try
-		{
-			reader = new Scanner(socket.getInputStream());
-			writer = new PrintWriter(socket.getOutputStream());
-		}
-		catch (NullPointerException np)
-		{
-			throw new IOException("Could not read or write from client");
-		}
-		catch (IOException io)
-		{
-			throw new IOException("Could not read or write from client");
-		}	
-	}
-	
-	public String getInput()
-	{
-		int  row = -1;
-		char col = 0;
 		boolean done = false;
-		String  result = "err";
-		
 		while (!done)
 		{
-			if (reader.hasNextInt())
+			String shipType = reader.next();
+		}
+
+		return result;
+	}
+
+	public String getInput() 
+	{
+		int row = -1;
+		char col = 0;
+		String result = "err";
+
+		if (reader.hasNextInt()) 
+		{
+			row = reader.nextInt();
+		}
+
+		if (reader.hasNext()) 
+		{
+			String temp = reader.next();
+
+			if (temp.length() == 1) 
 			{
-				row = reader.nextInt();
+				col = Character.toUpperCase(temp.charAt(0));
 			}
+		}
+
+		if ((row >= 0) && (row <= 10)) 
+		{
+			if ((col >= 'A') && (col <= 'J')) 
+			{
+				result = Character.toString(col) + Integer.toString(row);
+			}
+		}
+
+		return result;
+	}
 	
-			if (reader.hasNext())
+	public boolean hasLost()
+	{
+		boolean result = true;
+		
+		for (int i = 0; i < shipArray.length; i++)
+		{
+			if (shipArray[i].isSunk())
 			{
-				String temp = reader.next();
-				
-				if (temp.length() == 1)
-				{
-					col = temp.charAt(0);
-				}
-			}
-			
-			if ((row >= 0) && (row <= 10))
-			{
-				if ((col >= 'A') && (col <= 'J'))
-				{
-					result = "Something"; //Not sure what should be returned
-				}
+				result = false;
 			}
 		}
 		
-		//Sent the result to the client
-		writer.println(result);
+		return result;
+	}
+	
+	public void sendToClient(String message)
+	{
+		writer.println(message);
 	}
 }
