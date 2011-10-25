@@ -1,6 +1,6 @@
 import java.io.*;
 import java.net.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class Player 
 {
@@ -50,33 +50,50 @@ public class Player
 
 	public String getInput() 
 	{
-		int row = -1;
-		char col = 0;
 		String result = "err";
 
-		if (reader.hasNextInt()) 
+		try
 		{
-			row = reader.nextInt();
-		}
-
-		if (reader.hasNext()) 
-		{
-			String temp = reader.next();
-
-			if (temp.length() == 1) 
+			String ship = reader.next().toUpperCase();
+			boolean temp = ship.contains("AC") || 
+						   ship.contains("CR") || 
+						   ship.contains("SB") ||
+						   ship.contains("FR");
+			
+			/*
+			if (reader.hasNextInt()) 
 			{
-				col = Character.toUpperCase(temp.charAt(0));
+				row = reader.nextInt();
 			}
-		}
-
-		if ((row >= 0) && (row <= 10)) 
-		{
-			if ((col >= 'A') && (col <= 'J')) 
+	
+			if (reader.hasNext()) 
 			{
-				result = Character.toString(col) + Integer.toString(row);
+				String temp = reader.next();
+	
+				if (temp.length() == 1) 
+				{
+					col = Character.toUpperCase(temp.charAt(0));
+				}
 			}
+	
+			if ((row >= 0) && (row <= 10)) 
+			{
+				if ((col >= 'A') && (col <= 'J')) 
+				{
+					result = Character.toString(col) + Integer.toString(row);
+				}
+			}
+			*/
 		}
-
+		catch (NoSuchElementException nse)
+		{
+			result = "err";
+		}
+		catch (IllegalStateException is)
+		{
+			result = "err";
+		}
+		
 		return result;
 	}
 	
