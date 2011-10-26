@@ -9,17 +9,22 @@ public class Player
 	private Socket socket = null;
 	private Scanner reader = null;
 	private PrintWriter writer = null;
-	private Ship[] shipArray = null;
+	private Ship[] shipArray = new Ship[4];
 	int playerNumber = 0;
 
 	public Player(int playerNumberIn) 
 	{
 		playerNumber = playerNumberIn;
 	}
+	
+	public int getPlayerNumber()
+	{
+		return playerNumber;
+	}
 
+	//Not finished
 	public int initialize() throws IOException 
 	{
-		int result = -1;
 		int port = 23; // Listen on port 23 by default
 
 		// Create a ServerSocket on port "port"
@@ -28,51 +33,64 @@ public class Player
 		reader = new Scanner(socket.getInputStream());
 		writer = new PrintWriter(socket.getOutputStream(), true);
 
-		if ((serverSocket != null) 
-			&& 
-			(socket != null) 
-			&& 
-			(reader != null)
-			&& 
-			(writer != null)) 
+		try
 		{
-			result = 0;
+			boolean done = false;
+			while (!done)
+			{
+				String shipType = reader.next().toUpperCase();
+				if (shipType.equals("AC"))
+				{
+				}
+				else if (shipType.equals("CR"))
+				{
+				}
+				else if (shipType.equals("SB"))
+				{
+				}
+				else if (shipType.equals("FR"))
+				{
+				}
+				else
+				{
+					return -1;
+				}
+			}
+		}
+		catch (NullPointerException np)
+		{
+			return -1;
 		}
 		
-		boolean done = false;
-		while (!done)
+		return 0;
+	}
+	
+	public String checkInput(String str)
+	{
+		for (Ship cur : shipArray)
 		{
-			String shipType = reader.next();
+			//Stopped here ---------------------------------------------
 		}
-
-		return result;
+		
+		return "";
 	}
 
 	public String getInput() 
 	{
 		String result = "err";
+		int  row = 0;
+		char col = 0;
 
 		try
 		{
-			String ship = reader.next().toUpperCase();
-			boolean temp = ship.contains("AC") || 
-						   ship.contains("CR") || 
-						   ship.contains("SB") ||
-						   ship.contains("FR");
-			
-			/*
-			if (reader.hasNextInt()) 
-			{
-				row = reader.nextInt();
-			}
-	
 			if (reader.hasNext()) 
 			{
 				String temp = reader.next();
 	
-				if (temp.length() == 1) 
+				if (temp.length() == 2) 
 				{
-					col = Character.toUpperCase(temp.charAt(0));
+					col = temp.charAt(0);
+					row = Integer.parseInt(temp.substring(1));
 				}
 			}
 	
@@ -83,7 +101,6 @@ public class Player
 					result = Character.toString(col) + Integer.toString(row);
 				}
 			}
-			*/
 		}
 		catch (NoSuchElementException nse)
 		{
