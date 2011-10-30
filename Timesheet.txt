@@ -43,3 +43,13 @@ Marc  |  10/19/2011 |    20:00   |   00:00  | Deliverable 3 test cases
 Marc  |  10/22/2011 |    15:00   |   17:00  | Reviewed the Ship and ShipNode classes, 
       |             |            |          | started to impliment the Player class.
 ---------------------------------------------------------------------------------------------
+Jared |  10/27/2011 |    16:00   |   18:00  | Deliverable 4 worked on Player class
+---------------------------------------------------------------------------------------------
+Jared |  10/28/2011 |    17:00   |   18:00  | Deliverable 4 worked on Player class
+---------------------------------------------------------------------------------------------
+Jared |  10/29/2011 |    13:00   |   17:00  | Deliverable 4 worked on Player class, revised
+      |             |            |          | Ship and ShipNode classes
+---------------------------------------------------------------------------------------------
+Jared |  10/30/2011 |    16:00   |   18:00  | Completed Player class implementation, further            
+      |             |            |          | revised Ship and ShipNode classes
+---------------------------------------------------------------------------------------------
