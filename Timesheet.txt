@@ -2,54 +2,58 @@ NOTE: Edit this sheet with the date, your name, the time, and what you are worki
       on before you check out a piece of code, and add the end time when you're finished.
 
 
-Name  |    Date     | Start Time | End time | Task
----------------------------------------------------------------------------------------------
-Marc  |  9/23/2011  |    15:00   |   18:00  | Deliverable 1 Work Breakdown and task list
-Jared |             |            |          |
----------------------------------------------------------------------------------------------
-Jared |  9/23/2011  |    18:00   |   21:15  | Deliverable 1 Work Breakdown 
----------------------------------------------------------------------------------------------
-Marc  |  9/24/2011  |    14:00   |   18:00  | Deliverable 1 Risk analysis
----------------------------------------------------------------------------------------------
-Jared |  9/25/2011  |    12:27   |   13:30  | Deliverable 1 Gantt chart and PERT chart
----------------------------------------------------------------------------------------------
-Jared |  9/26/2011  |    22:00   |   02:06  | Finished Deliverable 1 PERT chart, schedule, 
-      |             |            |          | fixed up formatting, consolidated work
-      |             |            |          | breakdown smaller sub headings
----------------------------------------------------------------------------------------------
-Marc  |  9/26/2011  |    23:00   |   00:54  | Deliverable 1 Gantt chart,
-      |             |            |          | Merged 'Create Client Game Server'
-      |             |            |          | and 'Create GUI', misc. editing
----------------------------------------------------------------------------------------------
-Marc  |  10/4/2011  |    14:47   |   15:30  | Deliverable 2 simple class diagram, program
-Jared |             |            |          | design
----------------------------------------------------------------------------------------------
-Jared |  10/5/2011  |    16:00   |   16:30  | Deliverable 2 UML diagram
----------------------------------------------------------------------------------------------
-Marc  |  10/8/2011  |    14:00   |   16:00  | Worked on writing class descriptions
-      |             |    21:00   |   22:30  |
----------------------------------------------------------------------------------------------
-Jared |  10/9/2011  |    09:30   |   12:00  | Deliverable 2 updated UML diagram, wrote some
-      |             |            |          | test implementation for Ship and subclasses
----------------------------------------------------------------------------------------------
-Marc  |  10/10/2011 |    16:00   |   17:30  | General clean-up of class description
----------------------------------------------------------------------------------------------
-Jared |  10/18/2011 |    17:10   |   18:30  | Deliverable 3 test cases
----------------------------------------------------------------------------------------------
-Jared |  10/19/2011 |    02:00   |   02:40  | Deliverable 3 test cases
----------------------------------------------------------------------------------------------
-Marc  |  10/19/2011 |    20:00   |   00:00  | Deliverable 3 test cases
----------------------------------------------------------------------------------------------
-Marc  |  10/22/2011 |    15:00   |   17:00  | Reviewed the Ship and ShipNode classes, 
-      |             |            |          | started to impliment the Player class.
----------------------------------------------------------------------------------------------
-Jared |  10/27/2011 |    16:00   |   18:00  | Deliverable 4 worked on Player class
----------------------------------------------------------------------------------------------
-Jared |  10/28/2011 |    17:00   |   18:00  | Deliverable 4 worked on Player class
----------------------------------------------------------------------------------------------
-Jared |  10/29/2011 |    13:00   |   17:00  | Deliverable 4 worked on Player class, revised
-      |             |            |          | Ship and ShipNode classes
----------------------------------------------------------------------------------------------
-Jared |  10/30/2011 |    16:00   |   18:00  | Completed Player class implementation, further            
-      |             |            |          | revised Ship and ShipNode classes
----------------------------------------------------------------------------------------------
+Name  |    Date     |    Time   | Task
+----------------------------------------------------------------------------------
+Marc  |  9/23/2011  |    3:00   | Deliverable 1 Work Breakdown and task list
+Jared |             |           |
+----------------------------------------------------------------------------------
+Jared |  9/23/2011  |    3:15   | Deliverable 1 Work Breakdown 
+----------------------------------------------------------------------------------
+Marc  |  9/24/2011  |    4:00   | Deliverable 1 Risk analysis
+----------------------------------------------------------------------------------
+Jared |  9/25/2011  |    0:30   | Deliverable 1 Gantt chart and PERT chart
+----------------------------------------------------------------------------------
+Jared |  9/26/2011  |    4:00   | Finished Deliverable 1 PERT chart, schedule, 
+      |             |           | fixed up formatting, consolidated work
+      |             |           | breakdown smaller sub headings
+----------------------------------------------------------------------------------
+Marc  |  9/26/2011  |    2:00   | Deliverable 1 Gantt chart,
+      |             |           | Merged 'Create Client Game Server'
+      |             |           | and 'Create GUI', misc. editing
+----------------------------------------------------------------------------------
+Marc  |  10/4/2011  |    0:45   | Deliverable 2 simple class diagram, program
+Jared |             |           | design
+----------------------------------------------------------------------------------
+Jared |  10/5/2011  |    0:30   | Deliverable 2 UML diagram
+----------------------------------------------------------------------------------
+Marc  |  10/8/2011  |    3:00   | Worked on writing class descriptions
+----------------------------------------------------------------------------------
+Jared |  10/9/2011  |    2:30   | Deliverable 2 updated UML diagram, wrote some
+      |             |           | test implementation for Ship and subclasses
+----------------------------------------------------------------------------------
+Marc  |  10/10/2011 |    1:30   | General clean-up of class description
+----------------------------------------------------------------------------------
+Jared |  10/18/2011 |    1:45   | Deliverable 3 test cases
+----------------------------------------------------------------------------------
+Jared |  10/19/2011 |    0:45   | Deliverable 3 test cases
+----------------------------------------------------------------------------------
+Marc  |  10/19/2011 |    4:00   | Deliverable 3 test cases
+----------------------------------------------------------------------------------
+Marc  |  10/22/2011 |    2:00   | Reviewed the Ship and ShipNode classes, 
+      |             |           | started to impliment the Player class.
+----------------------------------------------------------------------------------
+Jared |  10/27/2011 |    2:00   | Deliverable 4 worked on Player class
+----------------------------------------------------------------------------------
+Jared |  10/28/2011 |    1:00   | Deliverable 4 worked on Player class
+----------------------------------------------------------------------------------
+Jared |  10/29/2011 |    4:00   | Deliverable 4 worked on Player class, revised
+      |             |           | Ship and ShipNode classes
+----------------------------------------------------------------------------------
+Jared |  10/30/2011 |    2:00   | Completed Player class implementation, further            
+      |             |           | revised Ship and ShipNode classes
+----------------------------------------------------------------------------------
+Marc  |  10/30/2011 |    6:00   | Completed debugging and did misc improvements
+      |             |           | in the Ship, ShipNode and Player classes,
+      |             |           | created GameMaster and GameServer classes,
+      |             |           | integration testing. 
+----------------------------------------------------------------------------------
