@@ -64,3 +64,6 @@ Jared |  10/6/2011  |    3:00   | Completed second iteration of UI mockups
 Jared |  10/7/2011  |    5:00   | Completed third iteration of UI mockups, wrote
       |             |           | technical report on UI design
 ----------------------------------------------------------------------------------
+Marc  |  10/7/2011  |    3:00   | Completed first UI design document
+      |             |           | Fixed minor server bug
+----------------------------------------------------------------------------------
