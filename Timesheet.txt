@@ -57,13 +57,20 @@ Marc  |  10/30/2011 |    6:00   | Completed debugging and did misc improvements
       |             |           | created GameMaster and GameServer classes,
       |             |           | integration testing. 
 ----------------------------------------------------------------------------------
-Jared |  10/5/2011  |    3:00   | Completed first iteration of UI mockups
+Jared |  10/5/2011  |    3:00   | Completed first iteration of UI mockups.
 ----------------------------------------------------------------------------------
-Jared |  10/6/2011  |    3:00   | Completed second iteration of UI mockups
+Jared |  10/6/2011  |    3:00   | Completed second iteration of UI mockups.
 ----------------------------------------------------------------------------------
 Jared |  10/7/2011  |    5:00   | Completed third iteration of UI mockups, wrote
-      |             |           | technical report on UI design
+      |             |           | technical report on UI design.
 ----------------------------------------------------------------------------------
 Marc  |  10/7/2011  |    3:00   | Completed first UI design document
-      |             |           | Fixed minor server bug
+      |             |           | Fixed minor server bug.
+----------------------------------------------------------------------------------
+Marc  |  11/19/2011 |    2:00   | Started work on Leaderboard class, fixed 
+      |             |           | small issue with the server.
+----------------------------------------------------------------------------------
+Marc  |  11/20/2011 |    5:00   | Worked on the client.
+----------------------------------------------------------------------------------
+Marc  |  11/22/2011 |    4:00   | Worked on the client.
 ----------------------------------------------------------------------------------
