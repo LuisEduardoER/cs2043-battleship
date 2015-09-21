@@ -1,0 +1,1 @@
+A 2-player networked Battleship game designed and implemented for CS2043 at the University of New Brunswick. It consists of client and server software, the backend game engine, and a frontend GUI.
